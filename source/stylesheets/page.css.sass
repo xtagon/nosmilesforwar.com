@@ -1,0 +1,78 @@
+@import 'http://fonts.googleapis.com/css?family=Stint+Ultra+Condensed'
+
+$background_color: #F2EADE
+$heading_color: #313131
+$separator_border: 2px solid #E2CBA8
+
+html
+	background: $background_color
+
+#page
+	max-width: 670px
+	margin: 0 auto
+
+	h1, h2
+		color: $heading_color
+
+	h1
+		font:
+			family: 'Stint Ultra Condensed', serif
+			size: 40px
+			weight: normal
+	
+	h2
+		font:
+			family: sans-serif
+			size: 16px
+			weight: bold
+
+	& > section
+		margin: 28px 0 32px 0
+
+	& > header
+		border-bottom: $separator_border
+		text-align: center
+
+		img
+			margin: 25px 0 10px 0
+
+		& > div
+			border-top: $separator_border
+			margin-top: 1.5em
+
+			h1
+				margin: -28px 0 0 0
+
+				span
+					padding: 0 6px
+					background: $background_color
+
+			p
+				margin: 0.68em 0 1.38em 0
+				font:
+					family: sans-serif
+					size: 18px
+					style: italic
+
+				b
+					color: #C02000
+	
+	& > footer
+		border-top: $separator_border
+		text-align: right
+
+		span
+			font:
+				size: 13px
+				weight: normal
+				style: italic
+			color: $heading_color
+			padding-right: 0.5em
+
+			a
+				text-decoration: none
+				color: $heading_color
+				font-weight: bold
+
+				&:hover
+					text-decoration: underline
